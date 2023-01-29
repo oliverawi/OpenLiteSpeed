@@ -15,7 +15,7 @@ ROOTSQLPWD=$TEMPRANDSTR
 PMABLOWFISH=$TEMPRANDSTR
 
 # Define short code
-GITRAW=https://raw.githubusercontent.com/tujuhion/openlitespeed-centos-autoinstall/master
+GITRAW=https://raw.githubusercontent.com/oliverawi/OpenLiteSpeed/master/
 LSWSDIR=/usr/local/lsws
 
 # Update
@@ -36,8 +36,8 @@ mkdir /home/defdomain/logs
 yum -y install openlitespeed
 yum -y install MariaDB-server MariaDB-client
 
-# Install PHP 72
-yum -y install lsphp72 lsphp74-common lsphp74-mysqlnd lsphp74-process lsphp74-gd lsphp74-mbstring \
+# Install PHP 74
+yum -y install lsphp74 lsphp74-common lsphp74-mysqlnd lsphp74-process lsphp74-gd lsphp74-mbstring \
 lsphp74-mcrypt lsphp74-opcache lsphp74-bcmath lsphp74-pdo lsphp74-xml lsphp74-json lsphp74-zip lsphp74-xmlrpc lsphp74-pecl-mcrypt
 
 #Setting Up
